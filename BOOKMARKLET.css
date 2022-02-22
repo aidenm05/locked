@@ -1,0 +1,51 @@
+ .u-section-1 {
+  background-image: none;
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 6799px;
+}
+
+.u-section-1 .u-text-1 {
+  font-family: "Archivo Black";
+  margin: 12px 80px 0 741px;
+}
+
+.u-section-1 .u-text-2 {
+  font-family: "Covered By Your Grace";
+  margin: 11px 31px 0;
+}
+
+.u-section-1 .u-text-3 {
+  letter-spacing: 2px;
+  font-size: 0.625rem;
+  font-family: "Big Shoulders Inline Display";
+  line-height: 1.8;
+  font-weight: 900;
+  margin: 31px 0 39px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-text-1 {
+    margin-right: 0;
+    margin-left: 621px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-text-1 {
+    margin-left: 401px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-text-1 {
+    margin-left: 221px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-text-1 {
+    margin-left: 21px;
+  }
+}

@@ -1,0 +1,91 @@
+ .u-section-1 {
+  background-image: url("images/favicon.gif");
+  background-position: 50% 50%;
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 2199px;
+}
+
+.u-section-1 .u-group-1 {
+  min-height: 518px;
+  width: 1140px;
+  margin: 501px auto 60px;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding: 0;
+}
+
+.u-section-1 .u-text-1 {
+  line-height: 2;
+  font-size: 1.875rem;
+  font-family: "Rock Salt";
+  font-weight: 400;
+  margin: 95px -17px 0 80px;
+}
+
+.u-section-1 .u-text-2 {
+  font-size: 3rem;
+  font-family: "Sedgwick Ave Display";
+  margin: -181px 80px 162px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 1813px;
+  }
+
+  .u-section-1 .u-group-1 {
+    width: 476px;
+  }
+
+  .u-section-1 .u-text-1 {
+    width: 476px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 1389px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-top: -1223px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-top: -19px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 1042px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 656px;
+  }
+
+  .u-section-1 .u-group-1 {
+    width: calc(((100% - 1140px) / 2) + 690px);
+  }
+
+  .u-section-1 .u-text-1 {
+    width: 340px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-top: -139px;
+  }
+}

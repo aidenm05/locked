@@ -1,0 +1,57 @@
+ .u-section-1 {
+  background-image: none;
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 813px;
+}
+
+.u-section-1 .u-text-1 {
+  font-family: "Sedgwick Ave";
+  font-size: 3rem;
+  margin: 38px 0 0;
+}
+
+.u-section-1 .u-btn-1 {
+  background-image: none;
+  border-style: solid;
+  font-family: "Covered By Your Grace";
+  margin: 32px auto 0;
+  padding: 10px 285px 10px 284px;
+}
+
+.u-section-1 .u-text-2 {
+  font-family: "Covered By Your Grace";
+  line-height: 1;
+  font-size: 1.5rem;
+  margin: 51px 107px 0 32px;
+}
+
+.u-section-1 .u-btn-2 {
+  background-image: none;
+  border-style: solid;
+  margin: -37px auto 60px 478px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-text-2 {
+    margin-left: 31px;
+    margin-right: 31px;
+  }
+
+  .u-section-1 .u-btn-2 {
+    margin-left: 278px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-btn-2 {
+    margin-left: 58px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-btn-2 {
+    margin-left: 0;
+  }
+}

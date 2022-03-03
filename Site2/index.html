@@ -1,73 +1,299 @@
-<!DOCTYPE html>
-<html style="font-size: 16px;">
+﻿<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Secret spot">
-    <meta name="description" content="">
-    <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Home</title>
-    <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="Home.css" media="screen">
-    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
-    <meta name="generator" content="Nicepage 4.4.0, nicepage.com">
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display:400|Fira+Code:300,400,500,600,700|Audiowide:400|Concert+One:400|Gochi+Hand:400">
-    
-    
-    
-    
-    <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": "Site2"
-}</script>
-    <meta name="theme-color" content="#478ac9">
-    <meta property="og:title" content="Home">
-    <meta property="og:description" content="">
-    <meta property="og:type" content="website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Password Protected Page</title>
+    <style>
+        html, body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #dialogText {
+            color: white;
+            background-color: #333333;
+        }
+        
+        #dialogWrap {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: table;
+            background-color: #EEEEEE;
+        }
+        
+        #dialogWrapCell {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+        
+        #mainDialog {
+            max-width: 400px;
+            margin: 5px;
+            border: solid #AAAAAA 1px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px 3px #AAAAAA;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #FFFFFF;
+            overflow: hidden;
+            text-align: left;
+        }
+        #mainDialog > * {
+            padding: 10px 30px;
+        }
+        #passArea {
+            padding: 20px 30px;
+            background-color: white;
+        }
+        #passArea > * {
+            margin: 5px auto;
+        }
+        #pass {
+            width: 100%;
+            height: 40px;
+            font-size: 30px;
+        }
+        
+        #messageWrapper {
+            float: left;
+            vertical-align: middle;
+            line-height: 30px;
+        }
+        
+        .notifyText {
+            display: none;
+        }
+        
+        #invalidPass {
+            color: red;
+        }
+        
+        #success {
+            color: green;
+        }
+        
+        #submitPass {
+            font-size: 20px;
+            border-radius: 5px;
+            background-color: #E7E7E7;
+            border: solid gray 1px;
+            float: right;
+            cursor: pointer;
+        }
+        #contentFrame {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        #attribution {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 0.8em;
+        }
+        #attribution, #attribution a {
+            color: #999;
+        }
+        .error {
+            display: none;
+            color: red;
+        }
+    </style>
   </head>
-  <body data-home-page="Home.html" data-home-page-title="Home" class="u-body u-xl-mode">
-    <section class="u-clearfix u-image u-section-1" id="sec-11aa" data-image-width="1920" data-image-height="1080">
-      
-      <img class="u-image u-image-round u-preserve-proportions u-radius-50 u-image-1" src="images/rainbow_ball.gif" alt="" data-image-width="135" data-image-height="135" data-href="Page-1.html" data-page-id="825903640" data-target="_blank">
-      <img class="u-image u-image-default u-image-2" src="images/R8.jpg" alt="" data-image-width="1280" data-image-height="720" data-href="javascript:((function()%7Bvar a,b,c;c=&quot;https://are.loginccpsnet.net/go/hvtrs8%2F-nmw,ge%2Frlcy-mmjcne%2F0514-mkngcpadt%2Ftpicl/&quot;,b=document.createElement(&quot;iframe&quot;),b.setAttribute(&quot;src&quot;,c),b.setAttribute(&quot;id&quot;,&quot;rusic-modal&quot;),b.setAttribute(&quot;style&quot;,&quot;position: fixed; z-index: 999999; width: 1343px; height: 778px; right: 10px; top: 10px; border: 5px solid #8834af; overflow: hidden; background-color: #fff;&quot;),a=document.getElementsByTagName(&quot;body&quot;)%5B0%5D,a.appendChild(b)%7D)).call(this)">
-      <h1 class="u-custom-font u-text u-text-custom-color-1 u-text-1">
-        <a class="u-border-2 u-border-black u-btn u-button-style u-hover-black u-none u-text-black u-text-hover-white u-btn-1" href="https://you.loginccpsnet.net/" target="_blank">Secret spot - exclusive proxy</a>
-      </h1>
-      <img class="u-image u-image-default u-image-3" src="images/tumblr_mi4sfjRsYV1rrl4xho1_500.jpg" alt="" data-image-width="419" data-image-height="500">
-      <a href="https://nicepage.com/c/contact-form-html-templates" class="u-border-2 u-border-palette-1-dark-1 u-btn u-btn-round u-button-style u-custom-color-1 u-custom-font u-radius-16 u-text-custom-color-2 u-btn-2">Super sectet&nbsp;<br>unblocked&nbsp;<span style="font-weight: 700;"></span>
-        <br>
-        <span style="font-weight: 700; font-style: italic;">forever exploit</span>
-      </a>
-      <img class="u-hover-feature u-image u-image-default u-preserve-proportions u-image-4" src="images/Vaporwave-skin-via-hypex-Fortnite.png" alt="" data-image-width="384" data-image-height="384" data-href="https://nicepage.com">
-      <img class="u-image u-image-default u-image-5" src="images/OIP14.jpg" alt="" data-image-width="236" data-image-height="283" data-href="javascript:((function()%7Bvar a,b,c;c=&quot;https://are.loginccpsnet.net/go/hvtrs8%2F-nmw,ge%2Frlcy-ilngrqlmtj-nla%2F6067-aoolg%2Fuq/&quot;,b=document.createElement(&quot;iframe&quot;),b.setAttribute(&quot;src&quot;,c),b.setAttribute(&quot;id&quot;,&quot;rusic-modal&quot;),b.setAttribute(&quot;style&quot;,&quot;position: fixed; z-index: 999999; width: 1343px; height: 778px; right: 10px; top: 10px; border: 5px solid #8834af; overflow: hidden; background-color: #fff;&quot;),a=document.getElementsByTagName(&quot;body&quot;)%5B0%5D,a.appendChild(b)%7D)).call(this)">
-      <img class="u-image u-image-round u-radius-10 u-image-6" src="images/tumblr_nik7dqKraU1rrl4xho1_5001.png" alt="" data-image-width="500" data-image-height="543">
-      <h5 class="u-custom-font u-text u-text-custom-color-1 u-text-2">Private<br>&nbsp;chrome<br>&nbsp;browser
-      </h5>
-      <img class="u-image u-image-round u-radius-10 u-image-7" src="images/R9.jpg" alt="" data-image-width="1372" data-image-height="1175" data-href="https://replit.com/@AidenMcmanus/ch8ungus?embed=true#main.py" data-target="_blank">
-      <img class="u-image u-image-default u-image-8" src="images/R8.png" alt="" data-image-width="800" data-image-height="600" data-href="javascript:((function()%7Bvar a,b,c;c=&quot;https://are.loginccpsnet.net/go/hvtrs8%2F-nmw%2Cge%2Frlcy-rmbnoz-aoppmrctkol%2F7369-rmbnoz/&quot;,b=document.createElement(&quot;iframe&quot;),b.setAttribute(&quot;src&quot;,c),b.setAttribute(&quot;id&quot;,&quot;rusic-modal&quot;),b.setAttribute(&quot;style&quot;,&quot;position: fixed; z-index: 999999; width: 1343px; height: 778px; right: 10px; top: 10px; border: 5px solid #8834af; overflow: hidden; background-color: #fff;&quot;),a=document.getElementsByTagName(&quot;body&quot;)%5B0%5D,a.appendChild(b)%7D)).call(this)">
-      <h1 class="u-custom-font u-text u-text-body-alt-color u-text-3">Secret spot&nbsp;</h1>
-      <img class="u-image u-image-default u-image-9" src="images/5a4f82350089d46a2eb46d6882321370.jpg" alt="" data-image-width="640" data-image-height="452" data-href="javascript:((function()%7Bvar a,b,c;c=&quot;https://you.loginccpsnet.net/service/hvtrs8%2F-aacmultq.qpmtkf%7B.aoo%2Fgn-lmgkn&quot;,b=document.createElement(&quot;iframe&quot;),b.setAttribute(&quot;src&quot;,c),b.setAttribute(&quot;id&quot;,&quot;rusic-modal&quot;),b.setAttribute(&quot;style&quot;,&quot;position: fixed; z-index: 999999; width: 1343px; height: 778px; right: 10px; top: 10px; border: 5px solid #8834af; overflow: hidden; background-color: #fff;&quot;),a=document.getElementsByTagName(&quot;body&quot;)%5B0%5D,a.appendChild(b)%7D)).call(this)">
-      <img class="u-image u-image-default u-image-10" src="images/Commodore64.H01.watermarked.2k.png" alt="" data-image-width="1600" data-image-height="1600">
-      <div class="u-hover-feature u-uploaded-video u-video u-video-contain u-video-1">
-        <div class="embed-responsive">
-          <video class="embed-responsive-item" controls="">
-            <source src="files/aerybaer1.mp4" type="video/mp4">
-            <p>Your browser does not support HTML5 video.</p>
-          </video>
-          <button class="u-video-poster"></button>
+  <body>
+    <iframe id="contentFrame" frameBorder="0" allowfullscreen></iframe>
+    <div id="dialogWrap">
+        <div id="dialogWrapCell">
+            <div id="mainDialog">
+                <div id="dialogText">This page is password protected.</div>
+                <div id="passArea">
+                    <p id="passwordPrompt">Password</p>
+                    <input id="pass" type="password" name="pass" autofocus>
+                    <div>
+                        <span id="messageWrapper">
+                            <span id="invalidPass" class="error">Sorry, please try again.</span>
+                            <span id="trycatcherror" class="error">Sorry, something went wrong.</span>
+                            <span id="success" class="notifyText">Success!</span>
+                            &nbsp;
+                        </span>
+                        <button id="submitPass" type="button">Submit</button>
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+                <div id="securecontext" class="error">
+                    <p>
+                        Sorry, but password protection only works over a secure connection. Please load this page via HTTPS.
+                    </p>
+                </div>
+                <div id="nocrypto" class="error">
+                    <p>
+                        Your web browser appears to be outdated. Please visit this page using a modern browser.
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
-      <a href='javascript:((function()%7Bvar a,b,c;c="https://you.loginccpsnet.net",b=document.createElement("iframe"),b.setAttribute("src",c),b.setAttribute("id","rusic-modal"),b.setAttribute("style","position: fixed; z-index: 999999; width: 1343px; height: 778px; right: 10px; top: 10px; border: 5px solid #8834af; overflow: hidden; background-color: #fff;"),a=document.getElementsByTagName("body")%5B0%5D,a.appendChild(b)%7D)).call(this)' class="u-border-none u-btn u-btn-round u-button-style u-custom-font u-palette-4-light-1 u-radius-24 u-btn-3">SECRETSPOTPROXY</a>
-      <h6 class="u-custom-font u-text u-text-4">drag this button to bookamarks for a portable proxy</h6>
-      
-    </section>
-    
-    
-    
-    
-    
+    </div>
+    <div id="attribution">
+        Protected by <a href="https://www.maxlaumeister.com/pagecrypt/">PageCrypt</a>
+    </div>
+    <script>
+    (function() {
+
+        var pl = "1Oz0DsgA8yvagpYc85bCg1XfOliGKj4o4ocSDVcYsfcL9Kl9D9PgGeiBKDI8lxE49cGy5ryBeVXt+eRz/CK8rFSE6Z78Jqy7H3UaOhqfB8jVKinv6WGo4Ocp5b6vsz5SAkvbd2Bj+fcXyx460xLpNOemxJ+4HLYcbk9sUh9DQ11ALfY7idR3cm2G0aFslVuH4MVPjQ4eH2vnlTOOJ2Nr8IimJNAvXgbakZM/BNRcL3MqL+ZWCDhrBO7zqHH8IPkojz9FesnMMpcOApyIQn6t9/hf4xVhP0+uW/DFkydeBD+7nqgldWULD8D3a+CWlbu7dzODvERblyNRmT34y8YCZgi7DmN4mcNtofgW/vU5ExNP2oUuXTipP1kzFQLEsia5i5ErKTXH+3wTEbTc2sC7mTw2yXVwbyEsrwNjRo0rSw21HaSriMK5yapwwk4iVh46CVIWe7tMgDWST97ZxvApMq/+6aS+4UwWezepflRs9+1+DWpH/J55TM1aEIuKSNbrFqZ1aa6iTSYbL4khwb7cDTps4Dmo3XZdrmb5W/DrNPCyy+hXJqsSxhlmAbaV1KUKCldhxnoR0o9Al1tOxT1eiomPkIYecz/L6jOn4l9+08yl38g/5bYzw/AFWxd9cu2aDDTlyr6yyJr5J9VzmgxSDKTNLGhoVLhbEi3uLBeakSWSIRy18ylu8mRm4t6SuwqgOnLXeU/2fbDhf1kWI9R4Xi3zyHXCLKR4FNAp2A9PaUk42yYUGom30Pf5TsKivtV/cgrMQ56tu7tUIzHeDyP6Q4rM+BnDcw+xKWAiLSYVNpggeVz2ZxYjc/m+Z+GeAzh6OoWINISCOaYKdF7mgosv0kRAf6ztYl0rg8nttveBklhAEBVusV3+H7f7swAqzydTbK8s2c5sww2YpjaEvImdYgbF+u7Zp1JglFaYubVinKjqrYup4sdKpl46WlToJ7IU9xn8y/lDhd6NlR/Aq5K1Bj1LWCWA84hMwtY/Xf7CUsKEc7CwDnYnlze20V4EpdpdkKYY2s1UxiOBckXOw3ZtH1r48ZlQd/itZ1DdrXHcrpn1LSbXKqh606tactxy1347cPjF7gKftRwChV3xGEozggQOFQMXsogHLIXU5ucvf3hw42lqV+z6iGYgMZH44w9UR4Hg7AOvOtoWVOnCGtoUzJVQiPwym2Rpk4Zi3LslsN10vwqkI5GDN9R90eXEhwkb7ozkzUHcyfxpS+nw8weAzhKkPd6fNZbPj9si4xxf3GFsOXZG+8pY9+WrVyGdysdrp/QWC3zmR6lN0b374Bxdwy1lgBG5dDIMvuLsRK9GczDDVyQsa108cuYm2v2/WWZsKgIv5jAdWFu6LWTsDEXTcYPfjogY8DnXiaBHuk5ZwdsmL2LRpF4jiXm0rKjN5eVqHR35bZAir3q7XFbwWIdqHta4aPP9mMGP2DbBTmY3xA25njdm0ixg7A5qUTOMO2wZF144/7TCW85c5h/znMB5A2XCp0/uHtHnDk5kh4oNeV+9qoo41vLXXEr0plZDbOTZfWCyJgKMhl9HWFbbglFaWKteIGy/gtCywOyjEVcDx+UsO59RKnGg9yRMJ16uyn16ut7/tS+cm3gBykXxxixVGm8/qMlUGiyeqV5Qfs/z5QmQmmADm+wVMj5l6ND+ZBuXRRE4YOxDgtIUDwzJSG4IjAAICSoDv5x5J8j+hoJkLZm8W4VS2WFtd+kr0Lx/sLq/+lwfsIDNnd4/FK3TvF69Z/pnrmGTeiAlZMLtzRFs5S4aFasb3K1OQJFDewQ6uZkBbeFHKpu46Qv8pPgpcPC6666C8FnMkn3YdHbapJB/dVkwr7lVqQXRl4PKva01OxJ9PZmhngS/VESOO+7DahFSlEw5F6M7gzkKg1LKP4N6YIcz3nG1O8WBjjMT513sO4QQVk+P/UlyxVmrNqmkPWv9Fv01fQpiWhGpeGUCwHx/elkyCotu+5rRdG1CWDRxWfloxFUfl/i8QdimxpS/F2/MNIFckuOp9Mw5WKRJa06tqKjNMRWOC+mZjPJVdJF+3Q0jqiW29kgBUYTVCs5KLnBO2eVIgSvzZ0nRXYNz0wpi4Fw3s/7AfQcATq/IBDTaVAjISQr8cZoH4mQ9iOm/usNbuuctP1Kdg9WAy76PP2NbSS8Co6scbmNCwZk4JfvDPlOD+BeOzSq1SoFoQkjVd0RwawEq27DRYV4uBXtzJvSDTZFLGh/v7W1wIb+4rgzxaO/kEVFISdOoZ8q1O0nmjWM50z5TBhvkzX1kGG0m8HwYj4iR1ol6Gb06IkPe0Hn5OV+WikvQis2DCcvzuiLJX/JBPHGZBnQzutF4ULoQe6uFwbMJNfLtlQOYW1HAZrw8q1CClAS/0418g/ly0jTvTkHbI16HF6BR+9xpIHcTGfrCwc6Mx9tDynBLMytRloM0o1/mABb8pBLdqq8P7QZ9rLt+Mma+HMHamqRpK8IIIY/kpJOQEQ4CDcVPO3tQuXeouuL6uSk2tI2JKthgeh4SL/CHGzwJfOXbLSAIMztOR6iEbZKoE2JxG//no7xLZJbccqFnJSAQI7WmBLKkMeo4pCK7ZhFqPG77KFhA23EOZr4zYfcoBZXOlQOO/GiQJelj4q071P5oFpcM7/hlm2AoY7uw1i+j5iEWNbGJgJECZJgtuWCknfZgPNL7lCB/J66LqAZEV4J5XDQTIaUwsho517PEJ+bJ41280xJVhVHcb49xIjo7+LOnyscTON8yOYyIRHAs1OdYJBAFDCry9N4/HaxywAVqWqCS30+skZD7sA/ch0mkvc4L87Cxd6h7If0LvrwtvSpOCHr71OlpLR3DN+FWZ2xa73WrVQkWsKc6TxYiL+CwG9pFU+9ayLbLFw46OkvJttvGvrXLkMFNNZJBvC7f7qHmI3dArs/UbEirvZNBQY/ELAI8aaMxQCfP/JHvrDUKSfDxL4Szf4dTn41TtiyX1vH9E1Yef9n7JbqlHvvVd7/m4UJqiuYKp6SSVbE+bH6vL+mmW/4A6iblgZ59T/XePAtl8phAwiRjQyEHP2/l2uwaqMKNJPde3NvaJZP0fJm3jw0WOwANJRK9r+SLlShBEb9Ig55LulpQv8Ib+cynW/9WIVi4sSyt7Hz4/nv/zmAZXRb1+kuBeqDyVYxF3zfSxD7/PNgtljkqMyVCynmzA0PXZHEeQU5lv9tJJwzg6KdX0EimeMmkIW8dT8s1Ush2CSb3hji6QbE+VqLqx7nYkTh92NcGO/tQ+ZXl2IW+3TbwrpJ78jOXwsHGSrWsRtHs25Bh9SGSs6y9i8ZdCFusnaDpBfQaxeLrGsfA5Oh49wfm0xKqE6RK2nZP567mn1PDlps8FdpnJNKJmJ7kfCgXpwsYunkIZwg4E62Oq4KAO52iyfZQ/5pOygppWTJzxVsypvjYpLtWiIt23AAR3Efhp8zEVyvY1F/0IshdesA4xjBHVrp1p6bSx6W8QbR9UKGLUPfCyQHHIjYU1nqpdhLNjINkSpO17VZNTLxfuOspd1KBNrFmX3uFyULoqstBhrEDFJ4OV+8gcsurTE98VsYFInecnbsYGthJLgL3K7xIDf2gshcHR29kKqLVAG3nmrkF8AdNm2CoCb6qNsoeBC1STGfNn7p41FnhhJjLbmlMkWDOgBBr07O6m+CdbRjwKONKSPy8kRAPVYZDNdWG6bcULgRz45DlH5OmbnV5e7DGV/qLa0BgXcmtoz2EqhoMX/oVemiTIFXHiTlkbKiveGwsh8sBG8r1YoscgY2GmiuvjCxz9df55Vyc2mrcdtYQY7TvdeYyE2G/RjzbY8/Uz7sLHq4msQooVX1zZ2QiFKnrHCG7r8LugImlaaWfLkdIawGvj4t0ClMdUNgrdyXHt7DERov2jInCEPU1VE//r8Da3tLDtMlA0tdBGlEXlvctOd3W7OYWxQZwiw3wmJwAGfT+eOu0QnKxLz/4+pQVlqW/wyAzkEU0xMW0yV9HohoVQQ4f74pB1kR7pJMjdJg2RQ4zo8NTKVmBETXzcj9GmZODzfE7/WALkRntCpbUprKwnnZ/gzM9hbXITH7StMIpqGOi+GvmbO14L69DBdBgY7292Mio5RaVuWPiJ5IRvLWYgZLVJ+cE9EL9WpuOdysW1eqwpbQfxepoOlBEQkkjH2JwSuKeAUZMeLVp4wEng6WbZxaGr15le6as+CIT3GX4Sjgb9NALtcWYV3LQwLnf3C/7+6ONewDhwp8vMcMJMiC2xtSZXOkx9nPyurRbf0PNZyWaAZdD7ckLDEv0lM1I3E7c35MYNRjIiExco/nBniN4GNd91TONadknp1Wh6LMJ0p1hHRfcS4EuUaVuAFY/3lffs+zFeipoJch2GM0oB4u77qwlFxn7QMmAvxi6cQX9zn9m3mZJXnZ8oZx+uPj5v0aOJAlXbWtcfmQLl6jNXjCeFcQUUru56Q4Q7AqxYDqd+4O38KRhuoMNPfzJR94Tb8mIVvOWeV/F9towOtlyrC4So0SpHP68MHFeTtRsY4EVWGMvVA9wiHUrb2MjQNXtVOia91WRzc+EIn85xc3m79UqqeOirJ5yT5zyGO994T1YEOlQJMLIQcsm6JxtgiRguZ07qvKt7eSeM2Ysr73E9HOcmn2m+1HJCtWaWw20w11tvumlQ/2NbV4K7nWyorqLs4GHUrqqj8qUgxaOuCVbZK7omNpnB3zxn4sEoXX3kYpAQ+doU4wMKqqTU1t8Z9HB4PFxlpZjRWRzXkJub5FO0+/8vHYV4RkQmfjCVBc6IEnFng/hCj4hnVAH1o0AHyVfCHY0Pbu1OlYYxAjY4/DZWDqAgAz95J2wPNt80X9hAPnQVAlsxPTgjLILUlnSqDBtRhh61Bou/2hpnzYTHi8jMYFL1L9rJy74TNKSLIVo4PJLUOcM2EZNhuxhR30kWnXtbT4ZFx86Nm0DpxJWYB7dkIi5dcgZnC2n6VJK1xaYVhW9uWkw3TWpGqVjHT4SCvAkADJfS4XW4GGvTaYWZXxJgMfXSE7h9I4ybDHDkl+az1l/bJWfbfB/LQgNfGyeq5foIUHQO7al9NEs8wSX1Ow5Xs84sLGxaD6yIg/+VJwLr53BfxNiNOVgfwPjOVG3KAjIaCfHf6yHWReXyZgVur0MCoWJmI1t3pWEk2udm4jRDwYcdBv6Kess/naC3GPyXTp3XPMKxUoiBu9OOj8RAjFuqC+miS3zIpJLBbnSmWeSgzcWc1tWgYgH8jEZNjnzyWJ8sERkyT/aR7Qz5Ugd4b0Q29xerMn+DDqoP+6rZA5wOo0mac5B/MBdMXzRJ1biOYLG4/8H4tsuX3Jcv2ZRdFa1El+aOi6qZF7IATMjnBCuwjnx9kh8zAxoaIZpMFos2RHvNFNhV3Ozu+6xN0kbNoPUarBK7mBZhDLPKNT3Ikx9vWTiD0g/X4H89B4gn9ogteKu7DolBn58w16Ur0WqVhqwQm0eyPfnZVZqmBoF4Y9MkBCmTvorOnCqf/nA/bgFh/BxTFqYwt8LLoJUn0dxtmpdCEizqpRQS0bGZMPkJ2Gj9D5IdS/yP33Xe01n7vdvT4XobLXCNCPJF4Gexbuk7iJxSQYCQeZ70g4c5C/F6iI8msDLNORZ7Dfa3Wr2ELhBlfM+8UQsF9QdV9RAFYS7QwLyUPLyxlFICEV1UmGQuRSL2TFg6SDoDt+ursfSuL7BVKzwFG5ya2lpLyXhXZm9D7W/iNnnnPZKyMffMppFDGIFwMwrE0xkCIdFfVyQ8/mLQQ+I59yHOq0JSg7ZwPBGf/Fbl2Ado3RKGNp1Cql/ugeXJ73F5AwnzI8YqfElEgtw6vNVJghyDojy/0VV/ngk1UxE0tNNJD70OA7sUASpsLZOOJiK8se+TSry2HaQoEeyGK56djXoxa0qUpkJ9XxU4FmSAWLHF6zYkRqzvlwBh6Tos7lRgvCxBnsAras47DGlaaWgWOdkDge/RfvFS6rLT2VWri6tWw3RM43ScZx/m8BzBHLhCPI4PHCky9aZ7B/wUG5df0zJkHYvnlTWPCsPIahsdH+5VHunMbR9+onA8DnfY2t1QsLHH2Io5FBRpRnYoewXwyGfjntPeeZ+Q9p3eWMGRGpKq5hYPNd5gp8/+2YA0LbpDXPrsicCPn449SwH+m6jGZI2RAYRiq9R9jsnbEXxrONCr2soW5GqmSJOZYq0gIo1nSwnzCqH873zW3C8pl0n1sgeZ8wsa/n5XwOP90H84InNSCf1iCGhGi1f5gjUUe3IudfEE55aCsIWCI+Z5iSAsWWPhfVwErna+Deh9h+Tt1My012BvbG4Vvh0Bwo30lnjQ9ixzCNkNq9wOC8dN0KOSWSCwWWF8Kxys+rKHRY//ohXxCgUVrARTC6uZ4E3Ei86B38ofWy43L2pgw0giPy1Zb934Ljd9pAclZAE1VN5Gm9tyiN2T+NN/EWMgWhXuua7osDewP+tDQFfUFQIGympJ71c+16cvEUcp5YNx2GzdL0n8llMy+R4SACENxiRnzHGA6UP3jhGdsQyoYlv1o2e6NFEQA0I97WEnwQo2hhYp91p2XLGdo3KyMWrWf/8Ohf5Zn03jqBlMmZ2Acf+jYnOQWAlhOyT4pcOCGAhoB43518Ag0KFtLmOBNzPAC54tKZvd8HZRVetTwvRCU72Zy9oM2XuXOfV5JlPlfrjLkNcVDCxA7UrECI0SOkkzeO3FOneNScI8anerOIDAqZkNOqi0XvI9fR7obSC0Jeu0zs9+Kf6WIoE/naNVe06j+mSnVkHdsX/rRdxaLQrviBC63ikUudCfatT/pseifIbTuxMPM9t1QrEZ4ZBoclZ23qptJmtw6WdAtBj3xT24oe2NiNSYqQbJ+WPwcUf9bqZF4RZaGlCYOo1W26dVf3PY/PiltWIljwqZUtQuCSiZhfbtMbT3MCGMg+dLTQ3mUOEHBRSapTrodc8j2Bko0ZSk4+4nbXO7G4fF7TcXYnj3/R/YRsuN38ZR7ATG8f3iASbdfqZfRQXAYV3m0FWtPrERql74VCHqFxnUehcknPYjQWGz1j4tmWUmP/H3ggeLGTsuhExMAKRTkiaFwtKSQRjCxFDo+ot9uh7RaWtaqdROY7V0WkKKnYjSnvkMpvRzWDYtCZn4rjoSoA0Vcp+sj19HOYwh01ypBMM3GJOVWSLZ/DebdOAY9jdb8/iU+F/e7Lgwa/237CvIE9mhRloSSd4CcOeuCG7NX9M3AR+crUsq+ROhLPl/v8Lpy92pc11SyD91nZnlnKmAcpLBuLKrNcKCquhbtL3yZ0EuWJ+1j0zYE6sHWVUEMcOfE+LZAd+QYKEVswOh9Pu3TcOqInhF17srYbpUkVWcvox/DNwvcQq733vfw9lZx0AMnIQ1QgsiG9LeSKtjc8HiZfgcozPGdWE3YuymfgMDZ2IQFm0TZ2IyiZfYLhWIBAapUPwAwcpi35aPLDz0vicC1jTyUqEAYXPCOHVUjo7eaB6asAa2oNFLt+2S93XCPpVyiYIGBMaQDXLRDbO2jdexBkxJ3BPT25kTHfQzM40o4BP/12t1U57hhQJfv+c3xZzH7t3ZpeXT6AvpZPSZ3ueOq5fFzycZ1b7U5DhhK2IgAKiJJJ4wEfufwDe12aIRo7ART14DikY30/Pypk4zKi9xW0o/h18iRTYlc7UfFrN9zRmfuDBDzEKH3zEEFI0nHn4fSpUg8hWCUxN+MBE5aEyW5UxzUqW5I3UHqwQRLZEFfB5gO5oMo4ZdxObR5LuVY2Ui8QUL6iCHvwvQ3PzC2OnOzTlLtqicQdYL986YV2nUXwZZq7WUZjxZjoccA+Dlo3Kq0HhrzDuV/4jdTO9yijDlwtDrmV6Mcgsk5bRJNjgo7wRgljfrabDwZRcp5GOKvPZP++8kUCHRop7V8hrvKV4kqgv/Prl+5/r9dgKWPs7c7efpc0OfNtbEgtK4L3ZXpGfStlbhStyLcAMy2rUO/uynTTPFGH6b22J6Mj3PWrPpm3pkhTIevRYmlBNh1rbIlcXC4jzaWnDxtINHjOW9Dqe9X9WJqXJX72WLarP6HTjpmBzjtKPn1HNH4WkoFFhFwLfSX9n9Soh3ioQ8kkR2/9ooVFoNSFxFh3m1ei3t7RhY6OxTO9Y2dVXX4DtxPL5/tZv+1VAnPvDwcR+9zWDhahkO36oWiWlRdU6U1As3Eur5QewAyoGbtX8J6xQuhSqRVE2ohwAoqNCoC2Vh4u+itzOr79X3SntzzfvSe8rTAeqxssjSd9kgfknoDSTXxftAxCMHoXXeviOviQoo9KvjehUhtaF18xmjzpQ0wbKqftTBJaIUthxDM/uEiZ7rMpF7G00xqXlRCUnoB73D90KK1fHwfQYVL9Gn4HnZMGRUDGjaTHiHr23Ev6UmG0VVXlL8OeyTyWLpqz6KWN/EZWNoN7sXO+zu6boWZlP4vSehQIWdRMLlotX8mjeW3g0ONSLX0y6w1NAUG2Veb7bslAiE5elB9yL9R3FwY4KLq0078++KHtu7ps53L8au8M4R6i6yNyPWQAaH70a8wCqhmkKsY+bYPX2L2r9UMKVafSkJIXH7A+XffECm37Pkqy7iHoApPeD7ygnTxrYXVEhvVMV1RWOWaefkB6GxvDF/MEtJRdh/UOH+8hSbfMpaCC+F6/q+S0Z4C8YCsbQdoEE5rkadMsWVb6BzPZY0J0BBQ1AfODSMy0nbSt1tbFaouPKDKtJjBJ/RI2scAXvcerGk2S3XNSqWlSnBLjhwSYHyB5UmSUg1QpKsKsrhvSWzIJEBIpi4DQ9FPj/QFGgtsETPI4/KJ2jLP8nvCu3I3Z/Wa+af/MXJtLevzoO8mF0oCtPDUa95B7bx4H+MqiZ3H5ohh4+fJqYbKE1ZYNRkUafp3F6QClXGRD/DhWAJlyFwWCT3jT6ztonUnNmMjxKXyjFstI5J+NK/hfRSnh485IegSM8RtaKoixWcT5D0Mx8rAmKmcCdRITNLxSKqNAK9uMxh3nXeuvg7TRUhy+2qq9AaqpKgUFoUbIiy3GCRHmT3X8CF1zr5QP3Psmz+RzHNn1HR/Cqv8tmkCpPtDq61dEosE6tHxMzsWGy5qy9o4OZQn58fJxbAxe57smWMKpK8SsI3lwLT1SpCzHcQWIz1uz7f7o1mu7DWRi1S3+vOlxWAjBD7D9w3u+WIdG2IoWkFYqOEsKHJGtrjn3hh62RAWmsjIHqJQ96qr/9YN48PBIgdqOd8MGysPBxdodjefy9ocqHxQJgURDQwm4co6xhV/F/NlDK343lqa7XtAxaqtg8VmkZkGluOr1mK6MFT0dDylxNb7RqYGJ9i2gIW1hU+dZs81MDQJpBfs+WehTCGk5r9+xCL/KobUr39KhmpHui95sg0moJh4E3BR6ZfMoIR7FUXgHmE74ErRNvUyVr+gBA0UA5Xj7almLIyutH7OnxhkAtc8GoLTm1ZEOsHGTadOwltyq5BN2vpw0hwziETHRPOCdtWaqyPGGppg8aX9Det/TPdus5IJl5sLcIZJuzL838NTtE59tVurw+hQ3ZyutH+sWKwD8+0+q2M1cJAO1mo0jT8Ky+edn3/06jZ41UdDKgE2u0FbVL8SJuPVgypNSJJ/y9G0cdgkFrVrfkRxBPyBX4bEAUGyNWoVeACmR46sUPYXLh2nwZfwi6rjeaIY53VwdRMpL0hORKjpjEKelD08NmecRFXbL5gChA9UUkItN3iWnouDRgIEOEM1qaqHwUkJpPTtJOxlJFp2ZK2FMfchoSXyiRBTym59nmw5FsVdYvMItfoUSAg+jb1Q6+mXqd5LcVnR/ErqjYSkkk7rrys8b/lqex5WE9gdN3FwXV8/H+u0E/p2bUtMnivuX+POd5UaaZCd6U0bcBsZUrb6jEcO3FCUClhOUEkNo20iheIrT6jDYwXyshI1uxMsgVYwmzP2QzS/Zmx1NeP5YuuG4x+7FyHK6EMgv1kc7pP0CZs5hhWAbzJoLoZ40dNzl4TWCvOMHZvNaE1UDNT+iQRS+DU3AMUw/TPSu1Hq66zR4eUXFavmmngE8l55Lv9QIfjJNfuT2swZYMtf6ii4AWCAPOXN+JB1iv+ccnVnT1DDLD6pWAdSJ1Pz6aJqKJF3CcDC/4FyW86WXXsjw/vyjiWtKdeqQ5zEiNzwJN0FX/qV3balMuZ7BXf8Ay5MwnoUHlHf266hmBxxhYvXoYHM4VwqKJybJKqZCxi9ViIb6MfWdgEFXgADR5hVL5nO8vGMaRi0v5ds0G8THNAagaQUFukC96lPiasEZzq1v36hGh8v2YDiIaT2SxeewE1OGlBq4vfUHoWOxBlvEOki9VLhZgrurQREu1y7WlIu65Oud0J3/AQj2F/UlI4b3wgnvwxnqB3y9I6gdS8rZdtZk9vRUrdtZrjz3kYux0c18VOrKJuA8eSMKDPjQtm91CD5rtDWnlHDRI33NUhCBZic9P6VdwxOpOzBAPD1IfR2ASiGuOw6iAhyqEAtDp3uWYXXX6GaaGsJ5o";
+        
+        var submitPass = document.getElementById('submitPass');
+        var passEl = document.getElementById('pass');
+        var invalidPassEl = document.getElementById('invalidPass');
+        var trycatcherror = document.getElementById('trycatcherror');
+        var successEl = document.getElementById('success');
+        var contentFrame = document.getElementById('contentFrame');
+        
+        // Sanity checks
+
+        if (pl === "") {
+            submitPass.disabled = true;
+            passEl.disabled = true;
+            alert("This page is meant to be used with the encryption tool. It doesn't work standalone.");
+            return;
+        }
+
+        if (!isSecureContext) {
+            document.querySelector("#passArea").style.display = "none";
+            document.querySelector("#securecontext").style.display = "block";
+            return;
+        }
+
+        if (!crypto.subtle) {
+            document.querySelector("#passArea").style.display = "none";
+            document.querySelector("#nocrypto").style.display = "block";
+            return;
+        }
+        
+        function str2ab(str) {
+            var ustr = atob(str);
+            var buf = new ArrayBuffer(ustr.length);
+            var bufView = new Uint8Array(buf);
+            for (var i=0, strLen=ustr.length; i < strLen; i++) {
+                bufView[i] = ustr.charCodeAt(i);
+            }
+            return bufView;
+        }
+
+        async function deriveKey(salt, password) {
+            const encoder = new TextEncoder()
+            const baseKey = await crypto.subtle.importKey(
+                'raw',
+                encoder.encode(password),
+                'PBKDF2',
+                false,
+                ['deriveKey'],
+            )
+            return await crypto.subtle.deriveKey(
+                { name: 'PBKDF2', salt, iterations: 100000, hash: 'SHA-256' },
+                baseKey,
+                { name: 'AES-GCM', length: 256 },
+                true,
+                ['decrypt'],
+            )
+        }
+        
+        async function doSubmit(evt) {
+            submitPass.disabled = true;
+            passEl.disabled = true;
+
+            let iv, ciphertext, key;
+            
+            try {
+                var unencodedPl = str2ab(pl);
+
+                const salt = unencodedPl.slice(0, 32)
+                iv = unencodedPl.slice(32, 32 + 16)
+                ciphertext = unencodedPl.slice(32 + 16)
+
+                key = await deriveKey(salt, passEl.value);
+            } catch (e) {
+                trycatcherror.style.display = "inline";
+                console.error(e);
+                return;
+            }
+
+            try {
+                const decryptedArray = new Uint8Array(
+                    await crypto.subtle.decrypt({ name: 'AES-GCM', iv }, key, ciphertext)
+                );
+
+                let decrypted = new TextDecoder().decode(decryptedArray);
+
+                if (decrypted === "") throw "No data returned";
+
+                const basestr = '<base href="." target="_top">';
+                const anchorfixstr = `
+                    <script>
+                        Array.from(document.links).forEach((anchor) => {
+                            const href = anchor.getAttribute("href");
+                            if (href.startsWith("#")) {
+                                anchor.addEventListener("click", function(e) {
+                                    e.preventDefault();
+                                    const targetId = this.getAttribute("href").substring(1);
+                                    const targetEl = document.getElementById(targetId);
+                                    targetEl.scrollIntoView();
+                                });
+                            }
+                        });
+                    <\/script>
+                `;
+                
+                // Set default iframe link targets to _top so all links break out of the iframe
+                if (decrypted.includes("<head>")) decrypted = decrypted.replace("<head>", "<head>" + basestr);
+                else if (decrypted.includes("<!DOCTYPE html>")) decrypted = decrypted.replace("<!DOCTYPE html>", "<!DOCTYPE html>" + basestr);
+                else decrypted = basestr + decrypted;
+
+                // Fix fragment links
+                if (decrypted.includes("</body>")) decrypted = decrypted.replace("</body>", anchorfixstr + '</body>');
+                else if (decrypted.includes("</html>")) decrypted = decrypted.replace("</html>", anchorfixstr + '</html>');
+                else decrypted = decrypted + anchorfixstr;
+                
+                contentFrame.srcdoc = decrypted;
+                
+                successEl.style.display = "inline";
+                setTimeout(function() {
+                    dialogWrap.style.display = "none";
+                }, 1000);
+            } catch (e) {
+                invalidPassEl.style.display = "inline";
+                passEl.value = "";
+                submitPass.disabled = false;
+                passEl.disabled = false;
+                console.error(e);
+                return;
+            }
+        }
+        
+        submitPass.onclick = doSubmit;
+        passEl.onkeypress = function(e){
+            if (!e) e = window.event;
+            var keyCode = e.keyCode || e.which;
+            invalidPassEl.style.display = "none";
+            if (keyCode == '13'){
+              // Enter pressed
+              doSubmit();
+              return false;
+            }
+        }
+    })();
+    </script>
   </body>
 </html>

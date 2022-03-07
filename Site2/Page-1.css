@@ -1,0 +1,91 @@
+ .u-section-1 {
+  background-image: url("images/xxxa.gif");
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 1280px;
+}
+
+.u-section-1 .u-text-1 {
+  font-family: "Concert One";
+  margin: 20px 278px 0 0;
+}
+
+.u-section-1 .u-btn-1 {
+  background-image: none;
+  border-style: none;
+  margin: -143px auto 0 117px;
+}
+
+.u-section-1 .u-btn-2 {
+  background-image: none;
+  border-style: none;
+  margin: -45px auto 0 248px;
+}
+
+.u-section-1 .u-custom-html-1 {
+  height: auto;
+  min-height: 45px;
+  margin: 189px 854px 60px 97px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 1055px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-right: 78px;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-btn-2 {
+    margin-left: 48px;
+  }
+
+  .u-section-1 .u-custom-html-1 {
+    margin-right: 751px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 808px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-right: 0;
+  }
+
+  .u-section-1 .u-btn-2 {
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-custom-html-1 {
+    margin-right: 531px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 606px;
+  }
+
+  .u-section-1 .u-custom-html-1 {
+    margin-right: 351px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 382px;
+  }
+
+  .u-section-1 .u-custom-html-1 {
+    margin-right: 151px;
+  }
+}
